@@ -1,0 +1,25 @@
+Executing an async function outside of an existing event loop is troublesome
+
+asyncio.Future is not thread safe
+
+concurrent.Future cannot be directly awaited
+
+Future.result() is a blocking operation even within an event loop 
+
+asyncio.Future.result() will throw an exeption if the future is not done
+
+asycn functions always execute in the asyncio loop (notthread or process backed)
+
+Cancellation and timeouts are tricky in threads and processes
+
+Thread local storage doesn't work for asyncio concurrency 
+
+# Best type of parallelism that has anything to do with CPU bound actions: multiprocessing 
+
+
+# If we are utilizing an async enables but it does HTTP requests uder the hood and its internally using requests. 
+We won't actually be able to await it, and it won't really take advantage it, 
+
+
+so this is better done with asyncio 
+
