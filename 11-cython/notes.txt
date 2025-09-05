@@ -1,0 +1,7 @@
+interpreter = internal run time 
+
+implemented in C
+
+Cython is optimizing static compliler for the Python programming language
+
+# math computations - are a series of interpreter instructions in CPython. The GIL tell us that one instruction at a time can run regardless of how many threads are running. It can't go faster with threading/ Bc of the GIL.
